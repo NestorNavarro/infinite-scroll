@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Noto Sans, sans-serif;
+    background-color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1.55rem;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    letter-spacing: .33rem;
+}
+
+/* Loader container */
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255, 0.8);
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Image container */
+.image-container {
+    margin: .6rem 30%;
+
+}
+
+.image-container img {
+    width: 100%;
+    margin-top: .3rem;
+    border-radius: 5px;
+}
+.image-container img:hover { 
+    transform: scale(1.01);
+    filter: brightness(120%);
+}
+
+/* Media Query: Large Smarphone */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    .image-container {
+        margin: .6rem;
+    }
+}
